@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nelson Mandella Akpomah - WDD 231</title>
+  <meta name="description" content="Mandellasly1 craft, studying Web Development {WDD231}">
+  <meta name="author" content="Nelson Mandella Akpomah">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+  <link rel="stylesheet" href="styles/home-page.css" />
+
+  <!-- JS -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+  <script src="scripts/home-page.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/chamber.svg" alt="Site logo" class="logo">
+      <span class="site-name">Welcome to Nelson Mandella Akpomah's site</span>
+      <button class="hamburger">&#9776;</button>
+    </div>
+    <nav class="nav-block" id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber/index.html">Chamber Project</a></li>
+        <li><a href="final/index.html">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section>
+      <h2>About Me</h2>
+      <p>My name is Nelson Mandella Akpomah. I am from Delta State, Nigeria, 
+        and currently based in Bayelsa state, Nigeria. I am a student of Brigham Young University-Idaho, 
+        where I am studying software development. I have a strong interest in technology and enjoy learning how to build solutions that solve real problems. 
+        My journey in software development is guided by curiosity, dedication, and a desire to keep improving my skills.</p>
+    </section>
+
+    <section>
+      <h2>Student Photo</h2>
+      <img src="images/profile.jpg" alt="My studies just began" width="300" />
+      
+    </section>
+
+    <section class="subtitle-section">
+      <h2 class="subtitle">Web Certificate Courses</h2>
+
+      <!-- Filter buttons -->
+      <div class="filters">
+        <button data-filter="all">All Courses</button>
+        <button data-filter="wdd">WDD Courses</button>
+        <button data-filter="cse">CSE Courses</button>
+      </div>
+
+      <!-- Course buttons -->
+      <div class="course-buttons">
+        <button data-course="WDD130">WDD130</button>
+        <button data-course="WDD131">WDD131</button>
+        <button data-course="WDD231">WDD231</button>
+        <button data-course="CSE110">CSE110</button>
+        <button data-course="CSE111">CSE111</button>
+        <button data-course="CSE210">CSE210</button>
+        
+      </div>
+      <p> The total credits for course listed above is 6 </p>
+      <!-- Course cards -->
+      <div id="course-container"></div>
+    </section>
+  </main>
+
+  <!-- Social links -->
+  <div class="social-links">
+    <a href="https://github.com/yourgithubusername" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+    <a href="https://x.com/yourxhandle" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/yourinstagramhandle" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/yourfacebookprofile" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+    <a href="https://t.me/yourtelegramhandle" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
+  </div>
+
+  <footer>
+    <small>&copy; <span id="year">2025</span> 🎗️ Future Child Sportive 🎗️ Nelson Mandella Akpomah 🎗️ Nigeria</small>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

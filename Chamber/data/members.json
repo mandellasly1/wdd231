@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Bayelsa Boutique",
+    "address": "45 Market Road, Yenagoa, Bayelsa",
+    "phone": "+234 801 234 5678",
+    "website": "https://bayelsaboutique.ng",
+    "image": "boutique.jpg",
+    "membershipLevel": 1,
+    "info": "A local fashion boutique offering traditional and modern styles."
+  },
+  {
+    "name": "BY Holdings Ltd",
+    "address": "12 Industrial Avenue, Yenagoa, Bayelsa",
+    "phone": "+234 809 555 1122",
+    "website": "https://by-holdings.com",
+    "image": "holdings.jpg",
+    "membershipLevel": 3,
+    "info": "Corporate investment firm supporting infrastructure and energy projects."
+  },
+  {
+    "name": "NewIn Bayelsa Services",
+    "address": "88 Residency Lane, Yenagoa, Bayelsa",
+    "phone": "+234 803 777 8899",
+    "website": "https://newinbayelsa.com",
+    "image": "services.jpg",
+    "membershipLevel": 2,
+    "info": "Community service hub helping new residents settle in Bayelsa."
+  },
+  {
+    "name": "Oxbow Tech Solutions",
+    "address": "Oxbow Lake Centre, Yenagoa, Bayelsa",
+    "phone": "+234 805 222 3344",
+    "website": "https://oxbowtech.com",
+    "image": "tech.jpg",
+    "membershipLevel": 3,
+    "info": "Technology company specializing in software development and IT training."
+  },
+  {
+    "name": "Bayelsa State Pavilion Catering",
+    "address": "Bayelsa State Pavilion, Yenagoa",
+    "phone": "+234 802 111 2233",
+    "website": "https://bayelsapavilioncatering.com",
+    "image": "pavilion.jpg",
+    "membershipLevel": 1,
+    "info": "Event catering services for conferences, weddings, and trade fairs."
+  },
+  {
+    "name": "SME Networking Hub",
+    "address": "23 Business Park, Yenagoa, Bayelsa",
+    "phone": "+234 806 444 5566",
+    "website": "https://smenetworkinghub.ng",
+    "image": "network.jpg",
+    "membershipLevel": 2,
+    "info": "A hub for small and medium enterprises to connect and collaborate."
+  },
+  {
+    "name": "Bayelsa Export Alliance",
+    "address": "17 Trade Centre, Yenagoa, Bayelsa",
+    "phone": "+234 807 999 0000",
+    "website": "https://bayelsaexportalliance.com",
+    "image": "export.jpg",
+    "membershipLevel": 3,
+    "info": "Supporting businesses in export readiness and international trade."
+  }
+]

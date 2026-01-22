@@ -1,0 +1,200 @@
+/* Base theme */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9; /* soft off-white */
+  color: #2c2c2c;           /* charcoal text */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+main, header, footer {
+  padding: 0rem;
+}
+
+/* Header */
+header {
+  display: grid;
+  background-color: #8d6e63;
+  justify-content: space-between; /* brand left, nav/hamburger right */
+  align-items: center;
+  padding: 1rem;
+  
+}
+
+.brand {
+  display: flex;
+  align-items: center;   /* logo + site name aligned vertically */
+  gap: 0.5rem;           /* space between logo and text */
+  justify-content: flex-start; /* keep everything aligned left */
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+
+
+/* Page heading */
+h1 {
+  display: block;
+  grid-column: 1 / -1;   /* span full width of the grid */
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: #4a148c; /* deep purple banner */
+  color: #ffffff;           /* white text */
+  
+}
+
+/* Hamburger */
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3a3737;
+}
+
+/* Navigation */
+.nav-block {
+  display: none;              /* hidden by default on small screens */
+  width: 100vw;               /* full viewport width */
+  margin-left: calc(-1rem);   /* cancel header padding if needed */
+  margin-right: calc(-1rem);
+  background-color: #4a148c;  /* same as footer */
+  padding: 0.5rem 0;
+}
+
+
+
+.nav-block ul {
+  display: flex;
+  justify-content: flex-start; /* align links to the left */
+  gap: 2rem;                   /* spacing between links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-block li {
+  margin: 0.5rem;
+}
+
+
+.nav-block a {
+  text-decoration: none;
+  color: #ffffff;             /* charcoal text */
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-align: left;
+}
+
+.nav-block a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ff6f61; /* coral pink accent */
+}
+
+.nav-block a:hover {
+  color: #ff6f61; /* coral pink hover */
+}
+
+/* Headings */
+.title, .subtitle {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.title { font-size: 2rem; }
+.subtitle { font-size: 1.5rem; }
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #8d6e63; /* same as nav */
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+/* Footer social icons */
+.social-links {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #4a148c; /* purple icons */
+}
+
+.social-links a:hover {
+  color: #ff6f61; /* coral pink hover */
+}
+
+.filters {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  background-color: #8d6e63;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filters button:hover {
+  background-color: #4a148c;
+}
+
+.course-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 per row */
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.course-buttons button {
+  padding: 1rem;
+  background-color: #f4f4f9;
+  border: 2px solid #8d6e63;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.course-buttons button:hover {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+/* Course cards */
+.course-card {
+  border: 2px solid #8d6e63;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+}
+
+/* Completed courses styled differently */
+.course-card.completed {
+  background-color: #dcedc8; /* light green background */
+  border-color: #4caf50;     /* green border */
+}

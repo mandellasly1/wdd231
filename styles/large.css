@@ -1,0 +1,35 @@
+/* Large screen styles */
+@media (min-width: 768px) {
+  .nav-block {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-block ul {
+    display: flex;
+    gap: 2rem;
+  }
+  .hamburger { display: none; }
+}
+
+ 
+/* Layout: not just one column */
+@media (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr ;
+    gap: 1rem;
+  }
+  section {
+    background: rgba(74,20,140,0.05); /* subtle purple overlay */
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .subtitle-section {
+    grid-column: 1 / -1;   /* span full width of the grid */
+    background: rgba(74,20,140,0.05); /* optional subtle background */
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+}

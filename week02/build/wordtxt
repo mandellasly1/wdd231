@@ -1,0 +1,101 @@
+<PROJECT: Lagos Chamber of Commerce Website>
+
+  <HEADER>
+    <LOGO> LC </LOGO>
+    <SITE_NAME> Lagos Chamber of Commerce </SITE_NAME>
+    <NAVIGATION>
+      <ITEM> Home </ITEM>
+      <ITEM> Business Discovery </ITEM>
+      <ITEM> Join </ITEM>
+      <ITEM> About </ITEM>
+      <HAMBURGER_MENU>
+        <ITEM> Podcast </ITEM>
+        <ITEM> Events </ITEM>
+      </HAMBURGER_MENU>
+    </NAVIGATION>
+  </HEADER>
+
+  <HOME_BLOCK>
+    <LABEL> Home </LABEL>
+  </HOME_BLOCK>
+
+  <HERO_SECTION full-width>
+    <IMAGE placeholder="Hero image spanning left to right" />
+    <TEXT> Promoting business growth and fostering community in Lagos </TEXT>
+    <BUTTONS>
+      <BUTTON> Join Now </BUTTON>
+      <BUTTON> Discover Businesses </BUTTON>
+      <BUTTON> View Events </BUTTON>
+    </BUTTONS>
+  </HERO_SECTION>
+
+  <MAIN_SECTIONS three-columns>
+    <SECTION title="Events">
+      <EVENT> SME Networking Night — Feb 12, 2026 • Victoria Island </EVENT>
+      <EVENT> Tech & Trade Fair — Mar 3, 2026 • Landmark Centre </EVENT>
+      <EVENT> Export Readiness Workshop — Mar 18, 2026 • Lekki </EVENT>
+    </SECTION>
+
+    <SECTION title="Current Weather">
+      <TEMP> 29° </TEMP>
+      <CONDITION> Partly Cloudy </CONDITION>
+      <LOCATION> Lagos, NG </LOCATION>
+    </SECTION>
+
+    <SECTION title="Weather Forecast">
+      <DAY> Sat — High 31° / Low 25° </DAY>
+      <DAY> Sun — High 30° / Low 24° </DAY>
+      <DAY> Mon — High 29° / Low 24° </DAY>
+    </SECTION>
+  </MAIN_SECTIONS>
+
+  <USER_PERSONAS full-width three-columns>
+    <PERSONA name="Small Business Owner — Aisha">
+      <IMAGE placeholder="Square image left" />
+      <DETAILS right-of-image>
+        <EMAIL> aisha@lagosboutique.ng </EMAIL>
+        <PHONE> +234 801 234 5678 </PHONE>
+        <URL> https://lagosboutique.ng </URL>
+      </DETAILS>
+    </PERSONA>
+
+    <PERSONA name="Corporate Executive — Chinedu">
+      <IMAGE placeholder="Square image left" />
+      <DETAILS right-of-image>
+        <EMAIL> chinedu@vi-holdings.com </EMAIL>
+        <PHONE> +234 809 555 1122 </PHONE>
+        <URL> https://vi-holdings.com </URL>
+      </DETAILS>
+    </PERSONA>
+
+    <PERSONA name="New Resident — David">
+      <IMAGE placeholder="Square image left" />
+      <DETAILS right-of-image>
+        <EMAIL> david@newinlagos.com </EMAIL>
+        <PHONE> +234 803 777 8899 </PHONE>
+        <URL> https://newinlagos.com </URL>
+      </DETAILS>
+    </PERSONA>
+  </USER_PERSONAS>
+
+  <FOOTER full-width three-sections>
+    <SECTION_LEFT>
+      <SITE_NAME> Lagos Chamber of Commerce </SITE_NAME>
+      <ADDRESS> 12 Marina Rd, Lagos Island, Lagos </ADDRESS>
+      <PHONE> +234 800 000 0000 </PHONE>
+      <EMAIL> info@lagoschamber.ng </EMAIL>
+    </SECTION_LEFT>
+
+    <SECTION_CENTER>
+      <SOCIAL_ICON> YouTube </SOCIAL_ICON>
+      <SOCIAL_ICON> Twitter </SOCIAL_ICON>
+      <SOCIAL_ICON> LinkedIn </SOCIAL_ICON>
+    </SECTION_CENTER>
+
+    <SECTION_RIGHT>
+      <TEXT> WDD210 Class Project </TEXT>
+      <DATE> © 2026 </DATE>
+    </SECTION_RIGHT>
+  </FOOTER>
+
+</PROJECT>

@@ -1,0 +1,29 @@
+/* Logo / site name */
+.site-name {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #ffffff; /* soft brown accent */
+}
+
+section h2 {
+  display: block;       /* ensures it's block-level */
+  width: 100%;          /* stretches across the section */
+  margin: 0 0 1rem 0;   /* spacing below the heading */
+  padding: 0.5rem;      /* breathing room inside */
+  background-color: #4a148c; /* deep purple background */
+  color: #ffffff;       /* white text for contrast */
+  text-align: center;   /* centers the heading text */
+  border-radius: 4px;   /* optional rounded corners */
+}
+
+
+footer p {
+  color: #ffd700;
+  margin-left: 10px;
+  margin: 0.5rem 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+

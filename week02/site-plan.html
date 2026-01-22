@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bayelsa Chamber of Commerce</title>
+  <meta name="description" content="Mandellasly1 craft, studying Web Development {WDD231}">
+  <meta name="author" content="Nelson Mandella Akpomah">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/site-plan.css" />
+</head>
+<body>
+ 
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">BC</div>
+      <span class="site-name">Bayelsa Chamber of Commerce</span>
+    </div>
+
+    <nav class="nav">
+          <!-- Mobile hamburger -->
+          <button class="hamburger mobile" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          
+          <!-- Desktop nav list (only 4 links) -->
+          <ul class="nav-list desktop-only">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Business Directory</a></li>
+            <li><a href="#">Join</a></li>
+          </ul>
+          
+          <!-- Desktop "More" dropdown (3 extra links) -->
+          <div class="more desktop-only">
+            <button class="hamburger desktop" aria-label="Open menu" aria-expanded="false">
+              <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-more">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Podcast</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+          
+          <!-- Mobile full nav list (will be populated by JS) -->
+          <ul class="nav-list mobile-full"></ul>
+    </nav>
+  </header>
+
+    <!-- Hero -->
+  <section class="hero wrapper" role="banner" aria-label="Hero">
+    <div class="hero-image" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>Promoting business growth and fostering community in Bayelsa</h1>
+      <div class="hero-actions">
+        <a class="btn primary" href="#">Join Now</a>
+        <a class="btn" href="#">Discover Businesses</a>
+        <a class="btn" href="#">View Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home block label -->
+  <section class="home-label wrapper" aria-label="Home section label">
+    <h2>Home</h2>
+  </section>
+
+  <!-- Sections -->
+  <section class="home-sections wrapper" aria-label="Key sections">
+    <div class="card">
+      <h3>Events</h3>
+      <ul class="events-list">
+        <li><strong>SME Networking Night</strong><span>Feb 12, 2026 • Yenagoa</span><a href="#" class="link">Register</a></li>
+        <li><strong>Tech & Trade Fair</strong><span>Mar 3, 2026 • Bayelsa State Pavilion</span><a href="#" class="link">Register</a></li>
+        <li><strong>Export Readiness Workshop</strong><span>Mar 18, 2026 • Oxbow Lake Centre</span><a href="#" class="link">Register</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Current Weather</h3>
+      <div class="weather-now">
+        <img class="weather-icon" src="https://via.placeholder.com/60" alt="Weather icon showing sun, clouds, and rain" />
+        <div class="weather-details">
+          <div class="temp">29°C</div>
+          <div class="cond">Partly Cloudy</div>
+          <div class="hi">High: 31°C</div>
+          <div class="lo">Low: 25°C</div>
+          <div class="humidity">Humidity: 65%</div>
+          <div class="sunrise">Sunrise: 6:45am</div>
+          <div class="sunset">Sunset: 6:30pm</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Weather Forecast</h3>
+      <div class="forecast-vertical">
+        <div class="day">Today: 29°C / 25°C</div>
+        <div class="day">Monday: 30°C / 24°C</div>
+        <div class="day">Tuesday: 31°C / 25°C</div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Personas -->
+  <section class="personas wrapper" aria-label="User personas">
+    <h2>User Personas</h2>
+
+    <article class="persona">
+      <header class="persona-title">Small Business Owner — Aisha</header>
+      <div class="persona-body">
+        <img class="persona-img" src="https://via.placeholder.com/120" alt="Portrait of Aisha" />
+        <div class="persona-details">
+          <div class="detail"><strong>Email:</strong> aisha@bayelsaboutique.ng</div>
+          <div class="detail"><strong>Phone:</strong> +234 801 234 5678</div>
+          <div class="detail"><strong>URL:</strong> https://bayelsaboutique.ng</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="persona">
+      <header class="persona-title">Corporate Executive — Chinedu</header>
+      <div class="persona-body">
+        <img class="persona-img" src="https://via.placeholder.com/120" alt="Portrait of Chinedu" />
+        <div class="persona-details">
+          <div class="detail"><strong>Email:</strong> chinedu@by-holdings.com</div>
+          <div class="detail"><strong>Phone:</strong> +234 809 555 1122</div>
+          <div class="detail"><strong>URL:</strong> https://by-holdings.com</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="persona">
+      <header class="persona-title">New Resident — David</header>
+      <div class="persona-body">
+        <img class="persona-img" src="https://via.placeholder.com/120" alt="Portrait of David" />
+        <div class="persona-details">
+          <div class="detail"><strong>Email:</strong> david@newinbayelsa.com</div>
+          <div class="detail"><strong>Phone:</strong> +234 803 777 8899</div>
+          <div class="detail"><strong>URL:</strong> https://newinbayelsa.com</div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+    <!-- Footer -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="footer-col left">
+      <div class="footer-name">Bayelsa Chamber of Commerce</div>
+      <div class="footer-line">Address: 12 Melford Okilo Rd, Yenagoa, Bayelsa</div>
+      <div class="footer-line">Phone: +234 800 000 0000</div>
+      <div class="footer-line">Email: info@bayelsachamber.ng</div>
+    </div>
+
+    <div class="footer-col center">
+      <a class="social" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a>
+      <a class="social" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+      <a class="social" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+    <div class="footer-col right">
+      <div>WDD231 Class Project</div>
+      <div id="footerDate">© <span id="year">2026</span></div>
+    </div>
+  </footer>
+
+  <script src="scripts/site-plan.js"></script>
+</body>
+</html>
+
