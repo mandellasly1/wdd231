@@ -191,3 +191,36 @@ document.addEventListener("DOMContentLoaded", () => {
   updateFooter();
 });
 
+
+// Display members in container
+function displayMembers(members) {
+  const container = document.getElementById("membersContainer");
+  container.innerHTML = ""; // clear before rendering
+
+  members.forEach(member => {
+    const card = document.createElement("div");
+    card.classList.add("member-card");
+
+    card.innerHTML = `
+      <img src="images/${member.image}" alt="${member.name} logo" class="member-img" />
+      <div class="member-info">
+        <h2 class="member-name">${member.name}</h2>
+        <p><strong>Address:</strong> ${member.address}</p>
+        <p><strong>Phone:</strong> ${member.phone}</p>
+        <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membershipLevel)}</p>
+        <p>${member.info}</p>
+      </div>
+    `;
+
+    // Set image dimensions dynamically
+    const img = card.querySelector('.member-img');
+    img.style.width = '100px';
+    img.style.height = '100px';
+    img.style.objectFit = 'cover';
+    img.style.borderRadius = '50%';
+    img.style.marginBottom = '0.5rem';
+
+    container.appendChild(card);
+  });
+}
