@@ -52,14 +52,13 @@ body {
 }
 
 /* =============================== */
-/* Navigation (Replaced) */
+/* Navigation */
 /* =============================== */
-
-.nav { 
-  display: flex; 
-  align-items: center; 
-  gap: 12px; 
-  position: relative; 
+.nav {  
+  display: flex;  
+  align-items: center;  
+  gap: 12px;  
+  position: relative;  
 }
 
 /* Desktop nav list */
@@ -126,12 +125,12 @@ body {
   text-decoration: none;
   border-radius: 6px;
 }
-.nav-more li a:hover { 
-  background: var(--accent); 
-  color: #fff; 
+.nav-more li a:hover {  
+  background: var(--accent);  
+  color: #fff;  
 }
-.nav-more.open { 
-  display: flex; 
+.nav-more.open {  
+  display: flex;  
 }
 
 /* Mobile full nav list */
@@ -236,7 +235,6 @@ body {
   margin-right: 1rem;
 }
 
-
 /* =============================== */
 /* Footer */
 /* =============================== */
@@ -279,52 +277,27 @@ body {
 }
 
 /* =============================== */
-/* Footer Grid Adjustment */
-/* =============================== */
-@media (max-width: 900px) {
-  .site-footer { 
-    grid-template-columns: 1fr; 
-    text-align: left; 
-  }
-  .footer-col.center { 
-    justify-content: flex-start; 
-  }
-  .footer-col.right { 
-    text-align: left; 
-  }
-}
-
-/* =============================== */
 /* Responsive Styles */
 /* =============================== */
 
 /* Tablet and below */
 @media (max-width: 900px) {
-  .site-footer { grid-template-columns: 1fr; text-align: left; }
-  .footer-col.center { justify-content: flex-start; }
-  .footer-col.right { text-align: left; }
+  .site-footer {  
+    grid-template-columns: 1fr;  
+    text-align: left;  
+  }
+  .footer-col.center {  
+    justify-content: flex-start;  
+  }
+  .footer-col.right {  
+    text-align: left;  
+  }
 }
 
 /* Mobile view - 720px and below */
 @media (max-width: 720px) {
-  /* Show mobile hamburger */
-  .hamburger.mobile {
-    display: grid !important;
-  }
-
-  /* Hide desktop-only elements */
-  .desktop-only {
-    display: none !important;
-  }
-
-  /* Hide desktop hamburger */
-  .hamburger.desktop {
-    display: none !important;
-  }
-
-  /* Mobile menu open state */
-  .nav-list.mobile-full.open {
-    display: flex !important;
-  }
+  .hamburger.mobile { display: grid !important; }
+  .desktop-only { display: none !important; }
+  .hamburger.desktop { display: none !important; }
+  .nav-list.mobile-full.open { display: flex !important; }
 }
-
