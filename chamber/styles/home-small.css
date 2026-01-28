@@ -404,6 +404,8 @@ body {
   gap: 10px;
   flex-wrap: wrap;
 }
+
+
 .footer-col.right { text-align: right; }
 .footer-name { font-weight: 700; margin-bottom: 4px; }
 .footer-line { color: var(--muted); font-size: 0.9rem; }
