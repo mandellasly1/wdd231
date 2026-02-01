@@ -12,7 +12,7 @@
 
   <!-- Facebook Open Graph Meta -->
   <meta property="og:title" content="Bayelsa Chamber of Commerce Directory" />
-  <meta property="og:description" content="Explore businesses and organizations in Bayelsa through our jojn Chamber Directory." />
+  <meta property="og:description" content="Explore businesses and organizations in Bayelsa through our join Chamber Directory." />
   <meta property="og:image" content="images/social-preview.png" />
   <meta property="og:url" content="https://yourdomain.com/chamber/directory.html" />
   <meta property="og:url" content="https://yourdomain.com/chamber/join.html" />
@@ -71,7 +71,6 @@
 
     <!-- Membership Level Cards -->
     <div class="membership-cards">
-      <!-- Keep all your original membership cards here -->
       <div class="card np">
         <div class="card-icon"></div>
         <h2>Non-Profit (NP)</h2>
@@ -101,27 +100,34 @@
     <!-- Form -->
     <form method="get" action="thankyou.html" class="join-form">
       <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" name="firstName" required autocomplete="given-name" />
+      <input type="text" id="firstName" name="firstName" required 
+             title="First name" autocomplete="given-name" />
 
       <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" required autocomplete="family-name" />
+      <input type="text" id="lastName" name="lastName" required 
+             title="Last name" autocomplete="family-name" />
 
       <label for="orgTitle">Organizational Title:</label>
       <input type="text" id="orgTitle" name="orgTitle" required 
+             autocomplete="organization-title"
              pattern="[a-zA-Z\s-]{7,}" 
              title="Must be at least 7 characters and contain only letters, spaces, and hyphens" />
 
       <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@email.com" />
+      <input type="email" id="email" name="email" required 
+             title="Email address" autocomplete="email" placeholder="example@email.com" />
 
       <label for="phone">Mobile Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required autocomplete="tel" />
+      <input type="tel" id="phone" name="phone" required 
+             title="Mobile phone number" autocomplete="tel" />
 
       <label for="businessName">Business/Organization Name:</label>
-      <input type="text" id="businessName" name="businessName" required autocomplete="organization" />
+      <input type="text" id="businessName" name="businessName" required 
+             title="Business or organization name" autocomplete="organization" />
 
       <label for="membershipLevel">Membership Level:</label>
-      <select id="membershipLevel" name="membershipLevel" required>
+      <select id="membershipLevel" name="membershipLevel" required 
+              title="Select membership level">
         <option value="" disabled selected>Select a membership level</option>
         <option value="np">Non-Profit (NP)</option>
         <option value="bronze">Bronze Membership</option>
@@ -130,7 +136,8 @@
       </select>
 
       <label for="description">Business/Organization Description:</label>
-      <textarea id="description" name="description" required></textarea>
+      <textarea id="description" name="description" required 
+                title="Description of business or organization"></textarea>
 
       <!-- Hidden timestamp field -->
       <input type="hidden" id="timestamp" name="timestamp" value="" />
@@ -167,4 +174,3 @@
   </script>
 </body>
 </html>
-
