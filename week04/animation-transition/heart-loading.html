@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulsing Heart Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+      margin: 0;
+    }
+
+    .heart-loader {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 2rem;
+    }
+
+    .heart {
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      background: #ff4d6d;
+      border-radius: 50% 50%;
+      transform: rotate(-45deg);
+      box-shadow: 0 0 10px rgba(255, 77, 109, 0.7);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .heart::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      background: #ff4d6d;
+      border-radius: 50% 50%;
+      transform: rotate(45deg);
+      box-shadow: 0 0 10px rgba(255, 77, 109, 0.7);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart-loader">
+    <div class="heart"></div>
+  </div>
+</body>
+</html>

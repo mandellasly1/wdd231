@@ -1,0 +1,409 @@
+/* =============================== */
+/* Join Page Specific Styles */
+/* =============================== */
+
+/* Join Page Heading and Description */
+.join h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.join p {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+/* =============================== */
+/* 1. Membership Cards */
+/* =============================== */
+.membership-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.membership-cards .card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.membership-cards .card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.membership-cards .card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.membership-cards .card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.membership-cards .card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.membership-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* =============================== */
+/* Membership Card Icons */
+/* =============================== */
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  color: var(--accent);
+}
+
+.membership-cards .card:hover .card-icon {
+  transform: scale(1.1);
+}
+
+/* Non-Profit Icon (Handshake) */
+.card:nth-child(1) .card-icon {
+  color: #27ae60; /* Green for trust/community */
+}
+
+.card:nth-child(1) .card-icon::before {
+  content: "🤝";
+}
+
+/* Bronze Icon (Medal) */
+.card:nth-child(2) .card-icon {
+  color: #cd7f32; /* Bronze color */
+}
+
+.card:nth-child(2) .card-icon::before {
+  content: "🥉";
+}
+
+/* Silver Icon (Medal) */
+.card:nth-child(3) .card-icon {
+  color: #c0c0c0; /* Silver color */
+}
+
+.card:nth-child(3) .card-icon::before {
+  content: "🥈";
+}
+
+/* Gold Icon (Medal) */
+.card:nth-child(4) .card-icon {
+  color: #ffd700; /* Gold color */
+}
+
+.card:nth-child(4) .card-icon::before {
+  content: "🥇";
+}
+
+.membership-cards .card h2 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.membership-cards .card p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.membership-cards .card button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.membership-cards .card button:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: scale(1.05);
+}
+
+/* =============================== */
+/* 2. Form Styling */
+/* =============================== */
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.join-form label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  display: block;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+}
+
+.join-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.join-form button[type="submit"] {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.join-form button[type="submit"]:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.join-form button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* =============================== */
+/* 3. Modals */
+/* =============================== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: var(--bg);
+  margin: 5% auto;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  animation: slideIn 0.4s ease-in-out;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.close {
+  color: var(--muted);
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+.modal h2 {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.modal p {
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.modal ul li:before {
+  content: "✓";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* =============================== */
+/* 4. Responsive Design */
+/* =============================== */
+
+/* Tablet - 2 columns */
+@media (min-width: 600px) {
+  .membership-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop - 4 columns */
+@media (min-width: 900px) {
+  .membership-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .join-form {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 599px) {
+  .membership-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .join-form {
+    padding: 1.5rem;
+  }
+  
+  .modal-content {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 10% auto;
+  }
+  
+  .modal h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* =============================== */
+/* 5. Animations */
+/* =============================== */
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+  }
+  to { 
+    opacity: 1; 
+  }
+}
+
+/* Slide in from top animation */
+@keyframes slideIn {
+  from { 
+    transform: translateY(-50px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+/* Slide up animation for cards */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Pulse animation for submit button */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 255, 0);
+  }
+}
+
+/* Apply pulse to submit button on hover */
+.join-form button[type="submit"]:hover {
+  animation: pulse 1.5s infinite;
+}

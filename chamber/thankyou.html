@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You</title>
+  <meta name="description" content="Thank you for your application" />
+  <meta name="author" content="Nelson Mandella Akpomah" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/directory-normalize.css" />
+  <link rel="stylesheet" href="styles/directory-small.css" />
+  <link rel="stylesheet" href="styles/directory-larger.css" />
+  <link rel="stylesheet" href="styles/thankyou.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">
+        <img src="images/bchamber.png" alt="Bayelsa Chamber of Commerce Logo">
+      </div>
+      <span class="site-name">Bayelsa Chamber of Commerce</span>
+    </div>
+
+    <nav class="nav">
+      <button class="hamburger mobile" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list desktop-only">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Business Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+      <div class="more desktop-only">
+        <button class="hamburger desktop" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-more">
+          <li><a href="about.html">About</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+      <ul class="nav-list mobile-full"></ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="wrapper">
+    <h1>Thank You for Your Application!</h1>
+    <p>We've received your information and will contact you soon.</p>
+    
+    <div class="form-data">
+      <h2>Application Details:</h2>
+      <!-- JavaScript will populate these -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="footer-col left">
+      <div class="footer-name">Bayelsa Chamber of Commerce</div>
+      <div class="footer-line">Address: 12 Melford Okilo Rd, Yenagoa, Bayelsa</div>
+      <div class="footer-line">Phone: +234 800 000 0000</div>
+      <div class="footer-line">Email: info@bayelsachamber.ng</div>
+    </div>
+    <div class="footer-col center">
+      <a class="social" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i> YouTube</a>
+      <a class="social" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>
+      <a class="social" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+    <div class="footer-col right">
+      <div>WDD231 Class Project — Nelson Mandella Akpomah</div>
+      <div id="footerDate">© <span id="year"></span> | Last Modified: <span id="lastModified"></span></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const fields = [
+      { label: "First Name", key: "firstName" },
+      { label: "Last Name", key: "lastName" },
+      { label: "Organizational Title", key: "orgTitle" },
+      { label: "Email", key: "email" },
+      { label: "Mobile Number", key: "phone" },
+      { label: "Business Name", key: "businessName" },
+      { label: "Membership Level", key: "membershipLevel" },
+      { label: "Description", key: "description" },
+      { label: "Timestamp", key: "timestamp" }
+    ];
+
+    const formDataDiv = document.querySelector('.form-data');
+
+    fields.forEach(field => {
+      const p = document.createElement('p');
+      p.innerHTML = `<strong>${field.label}:</strong> ${urlParams.get(field.key) || ''}`;
+      formDataDiv.appendChild(p);
+    });
+  </script>
+</body>
+</html>
