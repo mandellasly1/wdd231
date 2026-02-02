@@ -81,7 +81,7 @@
 }
 
 .card:nth-child(1) .card-icon::before {
-  content: "🤝";
+  content: "\1F91D"; /* 🤝 Handshake */
 }
 
 /* Bronze Icon (Medal) */
@@ -90,7 +90,7 @@
 }
 
 .card:nth-child(2) .card-icon::before {
-  content: "🥉";
+  content: "\1F949"; /* 🥉 Bronze Medal */
 }
 
 /* Silver Icon (Medal) */
@@ -99,7 +99,7 @@
 }
 
 .card:nth-child(3) .card-icon::before {
-  content: "🥈";
+  content: "\1F948"; /* 🥈 Silver Medal */
 }
 
 /* Gold Icon (Medal) */
@@ -108,7 +108,7 @@
 }
 
 .card:nth-child(4) .card-icon::before {
-  content: "🥇";
+  content: "\1F947"; /* 🥇 Gold Medal */
 }
 
 .membership-cards .card h2 {
