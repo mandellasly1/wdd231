@@ -203,11 +203,13 @@
   margin-top: 1rem;
 }
 
+/* Consolidated hover state */
 .join-form button[type="submit"]:hover {
   background: var(--accent);
   color: var(--bg);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: pulse 1.5s infinite;
 }
 
 .join-form button[type="submit"]:active {
@@ -401,9 +403,4 @@
   100% {
     box-shadow: 0 0 0 0 rgba(0, 0, 255, 0);
   }
-}
-
-/* Apply pulse to submit button on hover */
-.join-form button[type="submit"]:hover {
-  animation: pulse 1.5s infinite;
 }
