@@ -167,11 +167,12 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="scripts/directory.js"></script>
-  <script src="scripts/join.js"></script>
   <script>
     // Auto-fill timestamp when page loads
     document.getElementById('timestamp').value = new Date().toLocaleString();
   </script>
+
+  <script src="scripts/directory.js"> defer</script>
+  <script src="scripts/join.js"> defer</script>
 </body>
 </html>
