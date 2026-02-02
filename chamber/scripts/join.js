@@ -23,6 +23,10 @@ modalButtons.forEach(button => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('timestamp').value = new Date().toLocaleString();
+});
+
 // Close modal functionality
 const closeButtons = document.querySelectorAll(".close");
 closeButtons.forEach(button => {
