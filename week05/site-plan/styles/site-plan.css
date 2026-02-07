@@ -1,0 +1,65 @@
+:root {
+  --bg: #F5F5DC;           /* Beige - background */
+  --text: #333333;         /* Charcoal Gray - body text */
+  --muted: #666666;        /* Muted text */
+  --primary: #8B4513;      /* Saddle Brown - primary brand */
+  --secondary: #CC5500;    /* Burnt Orange - secondary accent */
+  --accent: #A0522D;       /* Deep Terracotta - borders, icons */
+  --card: #F7F7F8;         /* Light card background */
+  --border: #E5E7EB;       /* Border color */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1em;
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+.section h2 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5em;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--primary);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr ;
+  }
+}
