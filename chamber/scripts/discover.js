@@ -14,7 +14,7 @@ function checkVisitStatus() {
   const daysSinceVisit = Math.floor((now - lastVisitDate) / (1000 * 60 * 60 * 24));
   
   if (daysSinceVisit < 1) {
-    document.getElementById('visitMessage').textContent = "Back so soon! Awesome!";
+    document.getElementById('visitMessage').textContent = "Welcome! Please Explore.";
   } else {
     const dayWord = daysSinceVisit === 1 ? "day" : "days";
     document.getElementById('visitMessage').textContent = `You last visited ${daysSinceVisit} ${dayWord} ago.`;
