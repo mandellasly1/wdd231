@@ -335,3 +335,66 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* =============================== */
+/* Discover Page - Medium Screens (641px to 1024px) */
+/* =============================== */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-cards {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* =============================== */
+/* Discover Page - Large Screens (1025px and above) */
+/* =============================== */
+
+@media (min-width: 1025px) {
+  .discover-cards {
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Common styles for larger screens */
+.discover-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  position: relative; /* Required for absolute positioning */
+  height: 100%;
+}
+
+.discover-card button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background: var(--primary);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0 0 8px 8px;
+  transition: background 0.2s ease;
+}
+
+.discover-card button:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
