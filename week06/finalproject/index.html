@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sankofa Journeys - Celebrating African Heritage</title>
+  <meta name="description" content="Sankofa Journeys is a cultural and educational platform dedicated to celebrating African heritage and ancestral exploration. Discover stories, events, and resources to connect with your roots.">
+  <meta name="author" content="Nelson Mandella Akpomah">
+
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Sankofa Journeys - Celebrating African Heritage">
+  <meta property="og:description" content="Explore African culture, history, and ancestral stories through our community platform. Join the journey of rediscovering your roots.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sankofajourneys.com">
+  <meta property="og:image" content="https://sankofajourneys.com/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  
+   <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">
+        <img src="images/travel_safe.png" alt="Sankofa Journeys Logo" loading="lazy">
+      </div>
+      <span class="site-name">Sankofa Journeys</span>
+    </div>
+
+    <nav class="nav">
+    <!-- Mobile hamburger -->
+    <button class="hamburger mobile" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+    </button>
+
+    <!-- Desktop nav list (main links) -->
+    <ul class="nav-list desktop-only">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="journeys.html">Journeys</a></li>
+    </ul>
+
+    <!-- Desktop "More" dropdown -->
+    <div class="more desktop-only">
+        <button class="hamburger desktop" aria-label="Open menu" aria-expanded="false" aria-controls="desktop-more">
+        <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-more" id="desktop-more">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="events.html">Events</a></li>
+        </ul>
+    </div>
+
+    <!-- Mobile full nav list -->
+    <ul class="nav-list mobile-full" id="mobile-menu"></ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section class="hero">
+      <h2>Rediscover Your Roots</h2>
+      <p>Join our community in celebrating African heritage through stories, events, and educational resources.</p>
+      <button class="cta-button" id="cta-button">Explore Our Journey</button>
+    </section>
+
+    <section class="rediscover-roots">
+  <h2>Rediscover Your Roots</h2>
+  <p>
+    Sankofa Journeys invites you to reconnect with your heritage, explore ancestral traditions,
+    and celebrate the stories that shape our identity. Rediscovering your roots is not just about
+    history — it’s about living culture, community, and belonging.
+  </p>
+  <div class="roots-grid">
+    <article class="roots-card">
+      <img src="images/heritage.jpg" alt="African heritage">
+      <h3>Explore Heritage</h3>
+      <p>Learn about cultural practices, rituals, and wisdom passed down through generations.</p>
+      <a href="#" class="btn">Start Exploring</a>
+    </article>
+    <article class="roots-card">
+      <img src="images/journey.jpg" alt="Cultural journey">
+      <h3>Take the Journey</h3>
+      <p>Join immersive experiences that connect you with ancestral lands and traditions.</p>
+      <a href="#" class="btn">Join Now</a>
+    </article>
+    <article class="roots-card">
+      <img src="images/community.jpg" alt="Community gathering">
+      <h3>Connect with Community</h3>
+      <p>Share your story and discover others who walk the same path of rediscovery.</p>
+      <a href="#" class="btn">Share Your Story</a>
+    </article>
+  </div>
+</section>
+
+    <!-- Welcome & Weather Section -->
+    <section class="welcome-weather-section">
+      <div class="welcome-box">
+        <h2>Welcome to Sankofa Journeys</h2>
+        <p>Experience the richness of African culture and heritage. Our platform connects you with ancestral stories, cultural events, and a vibrant community dedicated to preserving and celebrating our roots.</p>
+      </div>
+
+      <div class="current-forecast-box">
+        <h3>Current Forecast</h3>
+        <div id="current-weather" class="weather-data" aria-live="polite">
+          <p class="temperature">--°</p>
+          <p class="condition">Loading...</p>
+          <p class="details">--</p>
+        </div>
+      </div>
+
+      <div class="weather-forecast-box">
+        <h3>Weather Forecast</h3>
+        <div id="forecast-weather" class="weather-data" aria-live="polite">
+          <p>Loading forecast...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Cultural Content -->
+<section class="featured-content">
+  <h2>Featured Cultural Content</h2>
+  <div class="content-grid">
+    <article class="content-card">
+      <img src="images/storytelling.jpg" alt="African storytelling">
+      <div class="card-info">
+        <h3>Oral Storytelling</h3>
+        <p>Discover the timeless art of oral traditions passed down through generations.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </article>
+    <article class="content-card">
+      <img src="images/dance.jpg" alt="African dance">
+      <div class="card-info">
+        <h3>Traditional Dance</h3>
+        <p>Experience rhythm and movement that celebrate cultural identity.</p>
+        <a href="#" class="btn">Explore</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Upcoming Cultural Events (Dynamic) -->
+<section class="upcoming-events">
+  <h2>Upcoming Cultural Events</h2>
+  <ul id="event-list"></ul>
+  <button class="btn share-event">Submit Your Event</button>
+
+  <!-- Event Submission Form (hidden by default) -->
+<div id="event-form-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Submit Your Event</h3>
+    <form id="event-form">
+      <label for="title">Event Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="date">Date:</label>
+      <input type="text" id="date" name="date" placeholder="e.g. March 15, 2026" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="link">Event Link:</label>
+      <input type="url" id="link" name="link" placeholder="http://example.com">
+
+      <button type="submit" class="btn">Add Event</button>
+    </form>
+  </div>
+</div>
+</section>
+
+
+
+<!-- Our Community Stories -->
+<section class="community-stories">
+  <h2>Our Community Stories</h2>
+  <div class="story-feed">
+    <article class="story-card">
+      <img src="images/community1.jpg" alt="Community story">
+      <div class="story-info">
+        <h3>Grandmother’s Wisdom</h3>
+        <p>“Every proverb carries the weight of our ancestors.” Read how oral wisdom shapes daily life.</p>
+        <a href="#" class="btn">Read Story</a>
+      </div>
+    </article>
+    <article class="story-card">
+      <img src="images/community2.jpg" alt="Community story">
+      <div class="story-info">
+        <h3>Journey of the Drums</h3>
+        <p>From village squares to global stages, discover the journey of African drumming.</p>
+        <a href="#" class="btn">Read Story</a>
+      </div>
+    </article>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="footer-col left">
+      <div class="footer-name">Sankofa Journeys</div>
+      <div class="footer-line">Exploring Nigerian heritage and cultural journeys</div>
+      <div class="footer-line">Email: info@sankofajourneys.ng</div>
+    </div>
+
+    <div class="footer-col center">
+      <a class="social" href="#" aria-label="YouTube" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+      <a class="social" href="#" aria-label="Twitter" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+      <a class="social" href="#" aria-label="LinkedIn" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a class="social" href="#" aria-label="Instagram" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-col right">
+      <div>Sankofa Journeys © <span id="year"></span></div>
+      <div id="footerDate">Last Modified: <span id="lastModified"></span></div>
+      <div><a href="attributions.html">Attributions</a> | <a href="video-demo.html">Project Demo Video</a></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="scripts/main.js" defer></script>
+</body>
+</html>

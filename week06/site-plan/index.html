@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankofa Journeys - Celebrating African Heritage</title>
+    <meta name="description" content="Sankofa Journeys is a cultural and educational platform dedicated to celebrating African heritage and ancestral exploration. Discover stories, events, and resources to connect with your roots." />
+    <meta name="author" content="Nelson Mandella Akpomah" />
+
+    <meta property="og:title" content="Sankofa Journeys - Celebrating African Heritage" />
+    <meta property="og:description" content="Explore African culture, history, and ancestral stories through our community platform. Join the journey of rediscovering your roots." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sankofajourneys.com" />
+    <meta property="og:image" content="https://sankofajourneys.com/images/og-image.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/site-plan.css" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    
+        <!-- Header -->
+<header class="site-header">
+  <div class="brand">
+    <div class="logo">
+      <img src="images/logo.png" alt="Sankofa Journeys Logo">
+    </div>
+    <span class="site-name">Sankofa Journeys</span>
+  </div>
+
+  <nav class="nav">
+  <!-- Mobile hamburger -->
+  <button class="hamburger mobile" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Desktop nav list (only 3 main links) -->
+  <ul class="nav-list desktop-only">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="discover.html">Discover</a></li>
+    <li><a href="journeys.html">Journeys</a></li>
+  </ul>
+
+  <!-- Desktop "More" dropdown -->
+  <div class="more desktop-only">
+    <button class="hamburger desktop" aria-label="Open menu" aria-expanded="false" aria-controls="desktop-more">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-more" id="desktop-more">
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="events.html">Events</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile full nav list (empty initially) -->
+  <ul class="nav-list mobile-full" id="mobile-menu"></ul>
+</nav>
+</header>
+    
+
+    <main id="main-content">
+        <section class="hero">
+            <h2>Rediscover Your Roots</h2>
+            <p>Join our community in celebrating African heritage through stories, events, and educational resources.</p>
+            <button class="cta-button" id="cta-button">Explore Our Journey</button>
+        </section>
+
+        <!-- Welcome & Weather Section (2fr 1fr 1fr Grid) -->
+        <section class="welcome-weather-section">
+            <div class="welcome-box">
+                <h2>Welcome to Sankofa Journeys</h2>
+                <p>Experience the richness of African culture and heritage. Our platform connects you with ancestral stories, cultural events, and a vibrant community dedicated to preserving and celebrating our roots.</p>
+            </div>
+            
+            <div class="current-forecast-box">
+                <h3>Current Forecast</h3>
+                <div id="current-weather" class="weather-data">
+                    <p class="temperature">--°</p>
+                    <p class="condition">Loading...</p>
+                    <p class="details">--</p>
+                </div>
+            </div>
+            
+            <div class="weather-forecast-box">
+                <h3>Weather Forecast</h3>
+                <div id="forecast-weather" class="weather-data">
+                    <p>Loading forecast...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-content">
+            <h2>Featured Cultural Content</h2>
+            <div id="content-grid" class="content-grid" role="region" aria-label="Featured cultural content"></div>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Cultural Events</h2>
+            <div id="event-grid" class="event-grid" role="region" aria-label="Upcoming events"></div>
+        </section>
+
+        <section class="community">
+            <h2>Our Community Stories</h2>
+            <div id="community-grid" class="community-grid" role="region" aria-label="Community stories"></div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer -->
+<footer class="site-footer" aria-label="Footer">
+  <div class="footer-col left">
+    <div class="footer-name">Sankofa Journeys</div>
+    <div class="footer-line">Exploring Nigerian heritage and cultural journeys</div>
+    <div class="footer-line">Email: info@sankofajourneys.ng</div>
+  </div>
+
+  <div class="footer-col center">
+    <a class="social" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a class="social" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a class="social" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a class="social" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <div class="footer-col right">
+    <div>Sankofa Journeys © <span id="year"></span></div>
+    <div id="footerDate">Last Modified: <span id="lastModified"></span></div>
+  </div>
+</footer>
+    </footer>
+
+    <script type="module" src="js/main.js" defer></script>
+
+</body>
+</html>
